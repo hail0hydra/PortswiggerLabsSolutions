@@ -32,3 +32,35 @@ This happened to me while exploiting a MYSQL based Union attack.
 ## THIS 🔥
 
 >_All modern databases provide ways to examine the database structure, and determine what tables and columns they contain._
+
+
+## hmmm... 🤔
+
+> _The possibilities depend on the configuration of the database and the types of errors you're able to trigger:_
+
+<br>
+<br>
+<br>
+
+#### ORACLE
+
+- there is a DUMMY table always avialable called `dual`. you can just do
+
+```sql
+select null
+```
+
+you have to do
+
+```
+select null from dual
+```
+
+<br>
+<br>
+<br>
+
+## important 👿
+
+- whatever happens. Try to find what kind of dbms is this fucker. ORACLE got me fucked up man. Once you know there is possibly some sqli, try to find who tf it is: ORACLE,MSSQL,POSGRES,MYSQL,etc.
+
